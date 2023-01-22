@@ -30,22 +30,22 @@ int main()
             printf("(Hint: It's cup that comes after this!)\n");}
 
         else{
-            printf("\n*It took you %d attempts to find the prize hidden in the correct cup! ", nges);
+            printf("\n*It took you %d attempts to find the prize hidden in the correct cup! Therefore, ", nges);
             }}
 
     if (nges >= 1 && nges <= 5){
-        printf("You won Rs 20/-!!!*\n");}
+        printf("you win Rs 20/-!!!*\n");}
 
-    if (nges >= 6 && nges <= 10){
-        printf("You won Rs 10/-!!!*\n");}
+    else if (nges >= 6 && nges <= 10){
+        printf("you win Rs 10/-!!!*\n");}
 
-    if (nges >= 11 && nges <= 15){
-        printf("You won Rs 5/-!!!*\n");}
+    else if (nges >= 11 && nges <= 15){
+        printf("you win Rs 5/-!!!*\n");}
 
     else{
-        printf("Since it took you more than 15 attempts, you lose! :(\nBetter Luck Next Time!*");}
+        printf("you lose since you took more than 15 attempts! :(\nBetter Luck Next Time!*\n");}
 
-    printf("Please Restart To Win The Following Prizes:\nRs 20 in 1-5 attempts!\nRs 15 in 5-10 attempts!\nRs 5 in 11-15 attempts!\n");
+    printf("\nPlease Restart To Win The Following Prizes:\nRs 20 in 1-5 attempts!\nRs 15 in 5-10 attempts!\nRs 5 in 11-15 attempts!\n");
             
     return 0;
 }
